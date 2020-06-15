@@ -1,5 +1,3 @@
-This repository illustrate how to implement an Image-Based Recommender System (IBRS) for e-commerce web-site.
-
 ## Requirements
 
 1. ```tensorflow==1.5.0```
@@ -12,8 +10,10 @@ Further requirements are described in file ```requirements.txt```.
 
 A user who clicks on a product is usually interested in products with a similar styles. It will then be useful to recommend to that user product with similar styles.
 
-<img src="usefulImg/hypothese.png" width="400px"/>
+<center> <img src="usefulImg/hypothese.png" width="500px"/> </center>
 <center> <b> Figure 1 </b>: A user browsing a tiled shirt </center>
+
+The entire implementation process is described in the ```Image-based Recommender System.ipynb``` notebook.
 
 ## Problem
 
@@ -26,10 +26,10 @@ By using <b>image understanding models</b>, we will be able to capture styles of
 
 Thanks to the advance of Deep Learning models, algorithms are able to understand images by learning their features representation (or embeddings). The most suitable Deep Learning model used for image features representation are <b> Convolutional Neural Networks </b> (CNNs). As depicted in the Figure 2, a CNN learns how to represent features of an input image by passing it through convolutional layers stacked on top of each other. The most appropriate layer for extracting features from the image is therefore the fully connected layer next to the last convolutional layer.
 
-<img src="usefulImg/cnn-architecture.png" width="400px"/>
+<center><img src="usefulImg/cnn-architecture.png" width="500px"/></center>
 <center> <b> Figure 2 </b>: Image understanding with Convolutional Neural Networks</center>
 
-The dimension of extracted features is determined by the dimension the fully connected layer from which these features were extracted. It varies a lot (1024, 2048, ...) depending on the CNN model used. The image features are therefore vectors of real values of the size as described previously. In this repository, we use the <a href="https://research.google.com/pubs/archive/43022.pdf">Inception (GoogLeNet)</a> CNN model, from which the dimension of extracted features is $(2048,1)$
+The dimension of extracted features is determined by the dimension the fully connected layer from which these features were extracted. It varies a lot (1024, 2048, ...) depending on the CNN model used. The image features are therefore vectors of real values of the size as described previously. In this repository, we use the <a href="https://research.google.com/pubs/archive/43022.pdf">Inception (GoogLeNet)</a> CNN model, from which the dimension of extracted features is (2048,1)
 
 ## Similarity between two images
 
@@ -40,15 +40,20 @@ Since image features are vectors, we can compute similarities between them using
 By ordering similarities between one image and all the others, we can therefore pick the top-k most similar items an recommend it to the user.
 
 Here are some examples of top-10 recommendations, computed over 1655 items. 
-<p><img src="usefulImg/test-1.png" width="400px"/></p>
-<p><img src="usefulImg/test-4.png" width="400px"/></p>
-<p><img src="usefulImg/test-7.png" width="400px"/></p>
-<p><img src="usefulImg/test-9.png" width="400px"/></p>
+<center>
+<p><img src="usefulImg/test-1.png" width="800px"/></p>
+<p><img src="usefulImg/test-4.png" width="800px"/></p>
+<p><img src="usefulImg/test-7.png" width="800px"/></p>
+<p><img src="usefulImg/test-9.png" width="800px"/></p>
+</center>
 
 This recommendation process actually work on <a href="https://shoppinglist.cm/fr/">ShoppingList</a> (an e-commerce plateform in Cameroon) for fashion products.
 
 ## Struture of the repository
 
+1. ```dataset.zip```: zipped file containing our items data
+2. ```Image-based Recommender System.ipynb``` : Jupyter notebook, illustrating in details how to implement an image-based recommender system. The process is fully described with code. 
+
 ## Authors
 
-<b><i>Carmel WENGA</i></b>, Applied Machine Learning Research Engineer | <a href="https://shoppinglist.cm/fr/">ShoppingList</a>, Nzhinusoft
+<b><i>Carmel WENGA</i></b>, Applied Machine Learning Research Engineer | <a href="https://shoppinglist.cm/">ShoppingList</a>, Nzhinusoft
