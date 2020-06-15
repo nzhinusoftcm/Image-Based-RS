@@ -65,9 +65,9 @@ This recommendation process actually work on <a href="https://shoppinglist.cm/fr
     'imPath': 'images/Fashion Women/Women Hand Bag/DSC_0022_m9aphKf.jpg'
 }
 ```
-    - ```googlenet```: folder containing the downloaded googlenet model used for image features extraction.
-    - ```image_features``` : folder containing extracted features for all images of our database.
-    - ```nmslib index```: nmslib index (space of all image features) used to compute similarities between images.
+   - ```googlenet```: folder containing the downloaded googlenet model used for image features extraction.
+   - ```image_features``` : folder containing extracted features for all images of our database.
+   - ```nmslib index```: nmslib index (space of all image features) used to compute similarities between images.
 
 At the end of the computation process, item's metadata will have two more attributes : ```image_features``` (path to image features of the item) and ```IBSP``` (Image-Based Similar Products) which is the list of ID of the top-10 similar product.
 
