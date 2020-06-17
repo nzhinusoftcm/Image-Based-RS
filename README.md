@@ -1,6 +1,6 @@
 ## Requirements
 
-1. ```tensorflow==2.0.0```
+1. ```tensorflow==2.0.1```
 2. ```numpy==1.18.1```
 3. ```nmslib==2.0.6```
 
