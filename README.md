@@ -1,8 +1,8 @@
 ## Requirements
 
-1. ```tensorflow==1.5.0```
-2. ```numpy==1.6.2```
-3. ```nmslib==2.0.5```
+1. ```tensorflow==2.0.0```
+2. ```numpy==1.18.1```
+3. ```nmslib==2.0.6```
 
 Further requirements are described in file ```requirements.txt```.
 
@@ -54,8 +54,8 @@ This recommendation process actually work on <a href="https://shoppinglist.cm/fr
 1. ```dataset.zip```: zipped file containing our items data
 2. ```Image-based Recommender System.ipynb``` : Jupyter notebook, illustrating in details how to implement an image-based recommender system. The process is fully described with code. By running this notebook, the following files will be generated :
 
-    - ```dataset``` : folder, obtained by unzipping file ```dataset.zip```
-    - ```items metadata```: folder, containing metadata for each items of our database. These metadata are information about items such as ```ID```, ```title```, ```categories```, ```imPath``` (path to the image assiociated to the item). They are displayed in dictionaries as follow:
+   - ```dataset``` : folder, obtained by unzipping file ```dataset.zip```
+   - ```items metadata```: folder, containing metadata for each items of our database. These metadata are information about items such as ```ID```, ```title```, ```categories```, ```imPath``` (path to the image assiociated to the item). They are displayed in dictionaries as follow:
 ```
 {
     'ID': 2073, 
