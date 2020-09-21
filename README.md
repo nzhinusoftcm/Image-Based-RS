@@ -52,7 +52,7 @@ This recommendation process actually work on <a href="https://shoppinglist.cm/fr
 ## Struture of the repository
 
 1. ```dataset.zip```: zipped file containing our items data
-2. ```Image-based Recommender System - tutorial.ipynb``` : Jupyter notebook, illustrating in details how to implement an image-based recommender system. The process is fully described with code. By running this notebook, the following files will be generated :
+2. [Image-based Recommender System - tutorial](https://github.com/nzhinusoftcm/Image-Based-RS/blob/master/Image-based%20Recommender%20System%20-%20tutorial.ipynb) (```Image-based Recommender System - tutorial.ipynb```) : Jupyter notebook, illustrating in details how to implement an image-based recommender system. The process is fully described with code. By running this notebook, the following files will be generated :
 
    - ```dataset``` : folder, obtained by unzipping file ```dataset.zip```
    - ```items metadata```: folder, containing metadata for each items of our database. These metadata are information about items such as ```ID```, ```title```, ```categories```, ```imPath``` (path to the image assiociated to the item). They are displayed in dictionaries as follow:
@@ -82,7 +82,7 @@ At the end of the computation process, item's metadata will have two more attrib
     'IBSP': [{'id': 5539, 'sim': 0.8035}, {'id': 6569, 'sim': 0.8035}, {'id': 534, 'sim': 0.7904}, {'id': 1907, 'sim': 0.7876}, {'id': 526, 'sim': 0.7816}, {'id': 3223, 'sim': 0.7799}, {'id': 320, 'sim': 0.7767}, {'id': 6575, 'sim': 0.774}, {'id': 5555, 'sim': 0.772}, {'id': 742, 'sim': 0.7702}]
 }
 ```
-3. ```Image-based Recommender System - mini.ipynb``` : reduced version of the tutorial. Functions have been grouped into four packages (```ibrs_utils.py```, ```features_extraction.py```, ```nearest_neighbors.py``` and ```googlenet.py```) and imported in this notebook for a short demonstration.
+3. [Image-based Recommender System - mini](https://github.com/nzhinusoftcm/Image-Based-RS/blob/master/Image-Based%20Recommender%20System%20-%20mini.ipynb)(```Image-based Recommender System - mini.ipynb```) : reduced version of the tutorial. All the functions defined in the [tutorial](https://github.com/nzhinusoftcm/Image-Based-RS/blob/master/Image-based%20Recommender%20System%20-%20tutorial.ipynb) have been grouped into four packages ([ibrs_utils](https://github.com/nzhinusoftcm/Image-Based-RS/blob/master/ibrs_utils.py), [features_extraction](https://github.com/nzhinusoftcm/Image-Based-RS/blob/master/features_extraction.py), [nearest_neighbors](https://github.com/nzhinusoftcm/Image-Based-RS/blob/master/nearest_neighbors.py) and [googlenet](https://github.com/nzhinusoftcm/Image-Based-RS/blob/master/googlenet.py)) and imported in this notebook for a short demonstration.
 
 ## References
 
@@ -92,4 +92,4 @@ At the end of the computation process, item's metadata will have two more attrib
 
 ## Authors
 
-<b><i>Carmel WENGA</i></b>, Applied Machine Learning Research Engineer | <a href="https://shoppinglist.cm/">ShoppingList</a>, Nzhinusoft
+[Carmel WENGA](https://www.linkedin.com/in/carmel-wenga-871876178/), Applied Machine Learning Research Engineer | <a href="https://shoppinglist.cm/">ShoppingList</a>, Nzhinusoft
